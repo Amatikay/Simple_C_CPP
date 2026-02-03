@@ -1,8 +1,17 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(TMP CXX C ASM)
+project(Simple_C_CPP CXX C ASM)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG        main
+)
+# # For Windows: Prevent overriding the parent project's compiler/linker settings
+# set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
 add_executable(CPP
     CPP/main.cpp
@@ -15,3 +24,16 @@ add_executable(C
     C/foo.c
 )
 set_target_properties(C PROPERTIES OUTPUT_NAME "c")
+
+enable_testing()
+include(GoogleTest)
+
+add_executable(
+  HelloWorldTest
+  Test/test.cpp
+)
+target_link_libraries(
+  HelloWorldTest
+  GTest::gtest_main
+)
+gtest_discover_tests(HelloWorldTest)
