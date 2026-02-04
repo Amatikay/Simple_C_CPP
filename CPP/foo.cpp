@@ -1,5 +1,9 @@
 #include "foo.hpp"
 
-void foo()
+namespace cpp
 {
-}
+    int foo(int a, int b)
+    {
+        return (a + b);
+    }
+}//namespace cpp

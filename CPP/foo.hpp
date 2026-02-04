@@ -1,8 +1,6 @@
-#ifndef FOO
-#define FOO
+#pragma once 
 
-#include "foo.hpp"
-
-void foo();
-
-#endif //FOO
+namespace cpp
+{
+    int foo(int a, int b);
+}//namespace cpp

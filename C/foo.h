@@ -1,6 +1,14 @@
 #ifndef FOO
 #define FOO
 
-void foo(void);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int foo(int a, int b);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //FOO
