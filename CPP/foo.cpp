@@ -1,5 +1,6 @@
 #include "foo.hpp"
 
-void foo()
+int foo(int a, int b)
 {
+    return (a + b);
 }

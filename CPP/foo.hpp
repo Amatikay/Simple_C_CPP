@@ -1,8 +1,3 @@
-#ifndef FOO
-#define FOO
+#pragma once 
 
-#include "foo.hpp"
-
-void foo();
-
-#endif //FOO
+int foo(int a, int b);
