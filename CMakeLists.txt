@@ -17,7 +17,6 @@ add_library(libcpp STATIC
     CPP/foo.cpp
 )
 target_include_directories(libcpp PUBLIC CPP)
-
 add_executable(CPP
     CPP/main.cpp
 )
@@ -44,6 +43,7 @@ add_executable(
 target_link_libraries(
   HelloWorldTest
   libcpp
+  libc
   GTest::gtest_main
 )
 gtest_discover_tests(HelloWorldTest)

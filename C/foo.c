@@ -1,6 +1,7 @@
 #include "foo.h"
 
 //prototype    
-void foo(void)
+int foo(int a, int b)
 {
+    return (a - b);
 }

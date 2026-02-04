@@ -1,3 +1,6 @@
 #pragma once 
 
-int foo(int a, int b);
+namespace cpp
+{
+    int foo(int a, int b);
+}//namespace cpp
