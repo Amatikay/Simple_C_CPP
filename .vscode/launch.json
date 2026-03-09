@@ -1,8 +1,7 @@
 {
-  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Cmake launch target",
+      "name": "Launch program",
       "type": "cppdbg",
       "request": "launch",
       "program": "${command:cmake.launchTargetPath}",
