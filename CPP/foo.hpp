@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <string_view>
+
 namespace cpp {
 
 template <typename Iter>
@@ -45,5 +47,8 @@ void printContainer(const Container& container) {
   }
   std::cout << '\n';
 }
+
+bool NextToken(std::string_view& sv, const char delimiter,
+               std::string_view& token);
 
 }  // namespace cpp

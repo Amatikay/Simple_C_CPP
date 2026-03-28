@@ -1,4 +1,2 @@
 BasedOnStyle: Google
-IndentWidth: 4
-TabWidth: 4
 UseTab: Never # Use spaces instead of tabs
