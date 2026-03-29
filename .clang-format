@@ -1,2 +1,4 @@
 BasedOnStyle: Google
+#AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: true
 UseTab: Never # Use spaces instead of tabs
