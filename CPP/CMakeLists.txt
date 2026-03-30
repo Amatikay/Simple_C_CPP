@@ -1,5 +1,6 @@
 add_library(libcpp STATIC
     foo.cpp
+    date.cpp
 )
 add_executable(CPP
     main.cpp
