@@ -11,4 +11,4 @@ int foo(int a, int b);
 }
 #endif
 
-#endif //FOO
+#endif  // FOO
