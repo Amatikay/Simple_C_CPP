@@ -1,5 +1,12 @@
-BasedOnStyle: Google
+BasedOnStyle:   Google
 
-IndentWidth: 4
-TabWidth:    4
-UseTab:      Never
+IndentWidth:     4
+TabWidth:        4
+AccessModifierOffset: -4
+BreakBeforeBraces:  Allman
+UseTab:             Never
+PointerAlignment:   Right
+ReferenceAlignment: Right
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: false
+BreakBeforeCloseBracketBracedList: true
